@@ -1,1 +1,1 @@
-web: gunicorn -b :$PORT app:mapAppJS
+web: gunicorn --bind 0.0.0.0:$PORT mapAppJS:app
