@@ -21,9 +21,6 @@ flask-googlemaps==0.4.0
 future==0.18.2
 geojson==2.5.0
 gmaps==0.9.0
-ipykernel==5.3.4
-ipython==7.18.1
-ipython-genutils==0.2.0
 ipywidgets==7.5.1
 itsdangerous==1.1.0
 jedi==0.17.2
