@@ -1,0 +1,282 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {
+        'packages':['geochart'],
+        // Note: you will need to get a mapsApiKey for your project.
+        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+        'mapsApiKey': 'AIzaSyAUniICLcrb9_Xjpg3Gxfi3AEkoF0ZG8iQ'
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['State', 'Popularity'],
+          ['US-AL', 60],
+          ['US-AK', 60],
+          ['US-AZ', 50],
+          ['US-AR', 90],
+          ['US-CA', 60],
+          ['US-CO', 40],
+          ['US-CT', 70],
+          ['US-DE', 100],
+          ['US-FL', 4],
+          ['US-GA', 50],
+          ['US-HI', 15],
+          ['US-ID', 25],
+          ['US-IL', 56],
+          ['US-IN', 25],
+          ['US-IA', 1],
+          ['US-KS', 60],
+          ['US-KY', 60],
+          ['US-LA', 50],
+          ['US-ME', 90],
+          ['US-MD', 60],
+          ['US-MA', 40],
+          ['US-MI', 70],
+          ['US-MN', 100],
+          ['US-MS', 4],
+          ['US-MO', 50],
+          ['US-MT', 15],
+          ['US-NE', 25],
+          ['US-NV', 56],
+          ['US-NH', 25],
+          ['US-NJ', 1],
+          ['US-NM', 60],
+          ['US-NY', 60],
+          ['US-NC', 50],
+          ['US-ND', 90],
+          ['US-OH', 60],
+          ['US-OK', 40],
+          ['US-OR', 70],
+          ['US-PA', 100],
+          ['US-RI', 4],
+          ['US-SC', 50],
+          ['US-SD', 15],
+          ['US-TN', 25],
+          ['US-TX', 56],
+          ['US-UT', 25],
+          ['US-VT', 1],
+          ['US-VA', 60],
+          ['US-WA', 60],
+          ['US-WV', 50],
+          ['US-WI', 90],
+          ['US-WY', 60],
+          
+
+
+        ]);
+
+        var options = {
+          region: 'US',
+          displayMode: 'regions',
+          resolution: 'provinces',
+          colors: ['#80ff80', '#ffff80','#ff4d4d' ],
+        };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+    <style>
+
+      h1 { color: #111; font-family: 'Open Sans Condensed', sans-serif; font-size: 64px; font-weight: 700; line-height: 64px; margin: 0 0 0; padding: 20px 30px; text-align: center; text-transform: uppercase; }
+
+      h2 { color: #111; font-family: 'Open Sans Condensed', sans-serif; font-size: 48px; font-weight: 700; line-height: 48px; margin: 0 0 24px; padding: 0 30px; text-align: center; text-transform: uppercase; }
+
+      h3 { color: #111; font-family: 'Open Sans Condensed', sans-serif; font-size: 15px; font-weight: 700; line-height: 0px; margin: 0 0 24px; padding: 0 0px; text-align: center; text-transform: uppercase; }
+
+      h4 { color:  #ffffff; font-family: 'Open Sans Condensed', sans-serif; font-size: 15px; font-weight: 700; line-height: 20px; margin: 0 0 40px; padding: 0 0px; text-align: center; text-transform: uppercase; }
+
+      p { color: #111; font-family: 'Open Sans', sans-serif; font-size: 16px; line-height: 28px; margin: 0 0 48px; }
+
+      a { color: #990000; text-decoration: none; }
+
+      a:hover { text-decoration: underline }
+
+      .date { color: #111; display: block; font-family: 'Open Sans', sans-serif; font-size: 16px; position: relative; text-align: center; z-index: 1; }
+
+      .date:before { border-top: 1px solid #111; content: ""; position: absolute; top: 12px; left: 0; width: 100%; z-index: -1; }
+
+      .author { color: #111; display: block; font-family: 'Open Sans', sans-serif; font-size: 16px; padding-bottom: 38px; position: relative; text-align: center; z-index: 1; }
+
+      .author:before { border-top: 1px solid #111; content: ""; position: absolute; top: 12px; left: 0; width: 100%; z-index: -1; }
+
+      .date span,
+
+      .author span { background: #fdfdfd; padding: 0 10px; text-transform: uppercase; }
+
+      .line { border-top: 1px solid #111; display: block; margin-top: 60px; padding-top: 50px; position: relative; }
+
+      .read-more1 { -moz-border-radius: 50%; -moz-transition: all 0.2s ease-in-out; -webkit-border-radius: 50%; -webkit-transition: all 0.2s ease-in-out; background: #111; border-radius: 50%; border: 10px solid #fdfdfd; color: #fff; display: block; font-family: 'Open Sans', sans-serif; font-size: 14px; height: 80px; line-height: 80px; margin: -40px 0 0 -40px; position: absolute; top: 40%; left: 10.5%; text-align: center; text-transform: uppercase; width: 80px; color: #ff4d4d; }
+      .read-more2 { -moz-border-radius: 50%; -moz-transition: all 0.2s ease-in-out; -webkit-border-radius: 50%; -webkit-transition: all 0.2s ease-in-out; background: #111; border-radius: 50%; border: 10px solid #fdfdfd; color: #fff; display: block; font-family: 'Open Sans', sans-serif; font-size: 14px; height: 80px; line-height: 80px; margin: -40px 0 0 -40px; position: absolute; top: 60%; left: 10.5%; text-align: center; text-transform: uppercase; width: 80px; color: #ffff80; }
+      .read-more3 { -moz-border-radius: 50%; -moz-transition: all 0.2s ease-in-out; -webkit-border-radius: 50%; -webkit-transition: all 0.2s ease-in-out; background: #111; border-radius: 50%; border: 10px solid #fdfdfd; color: #fff; display: block; font-family: 'Open Sans', sans-serif; font-size: 14px; height: 80px; line-height: 80px; margin: -40px 0 0 -40px; position: absolute; top: 80%; left: 10.5%; text-align: center; text-transform: uppercase; width: 80px; color: #80ff80; }
+
+      .read-more1:hover { background: #ff4d4d; text-decoration: none; color: #111; }
+      .read-more2:hover { background: #ffff80; text-decoration: none; color: #111; }
+      .read-more3:hover { background: #80ff80; text-decoration: none; color: #111; }
+
+      .title-block {
+         position: absolute;
+         top: 2%;
+         left: 10%;
+         background-color: white;
+         color: black;
+         padding-left: 20px;
+         padding-right: 20px;
+        }
+      .today-block {
+         position: absolute;
+         top: 25%;
+         left: 6.5%;
+         background-color: white;
+         color: black;
+         padding-left: 5px;
+         padding-right: 20px;
+        }
+
+      .sidebar {
+          height: 100%; /* 100% Full-height */
+          width: 0; /* 0 width - change this with JavaScript */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Stay on top */
+          top: 0;
+          left: 0;
+          background-color: #111; /* Black*/
+          overflow-x: hidden; /* Disable horizontal scroll */
+          padding-top: 60px; /* Place content 60px from the top */
+          transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+        }
+
+        /* The sidebar links */
+        .sidebar a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidebar a:hover {
+          color: #f1f1f1;
+        }
+
+        /* Position and style the close button (top right corner) */
+        .sidebar .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+
+        .sidebar .linkbtn {
+          position: absolute;
+          top: 200px;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+
+        /* The button used to open the sidebar */
+        .openbtn {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          font-size: 20px;
+          cursor: pointer;
+          background-color: White;
+          color: Black;
+          padding: 10px 15px;
+          border: none;
+
+        }
+
+        .openbtn:hover {
+          background-color: LightGray;
+        }
+
+
+
+
+        /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+        #main {
+          transition: margin-left .5s; /* If you want a transition effect */
+          padding: 20px;
+        }
+
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+          .sidebar {padding-top: 15px;}
+          .sidebar a {font-size: 18px;}
+        }
+
+    </style>
+
+
+  </head>
+  <body>
+    <div id="regions_div" style="padding-top: 7%; padding-left: 10%; width:90%; height: 85%;"></div>
+
+    <div class="title-block">
+      <h2>Predicting Covid-19 Hotspots Based on Tweets</h2>
+    </div>
+
+    <div class="today-block">
+      <h3>States Per Severity</h3>
+      <h3>Ranking</h3>
+    </div>
+
+    <div class="read-more1">
+      22
+    </div>
+
+    <div class="read-more2">
+      28
+    </div>
+
+    <div class="read-more3">
+      0
+    </div>
+
+
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="{{url_for('currentPredictions')}}"><h4>Current Predictions</h4></a>
+      <a href="{{url_for('pastPredictions')}}"><h4>Previous Predictions</h4></a>
+      <a href="{{url_for('predictionsProcess')}}"><h4>Process for Predictions</h4></a>
+      <a href="{{url_for('about')}}"><h4>The Team</h4></a>
+    </div>
+
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">&#9776; </button>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+    </script>
+
+    <script>
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+
+  </body>
+</html>

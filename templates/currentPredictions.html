@@ -1,0 +1,302 @@
+<html>
+<head>
+<style>
+  h1 { color: #111; font-family: 'Open Sans Condensed', sans-serif; font-size: 64px; font-weight: 700; line-height: 64px; margin: 0 0 0; padding: 20px 30px; text-align: center; text-transform: uppercase; }
+
+  h2 { color: #111; font-family: 'Open Sans Condensed', sans-serif; font-size: 48px; font-weight: 700; line-height: 48px; margin: 0 0 24px; padding: 30px 30px; text-align: center; text-transform: uppercase; }
+
+  h3 { color: #111; font-family: 'Open Sans Condensed', sans-serif; font-size: 20px; font-weight: 700; line-height: 0px; margin: 0 0 0px; padding: 65px 0px; text-align: center; text-transform: uppercase; }
+
+
+  p { color: #111; font-family: 'Open Sans', sans-serif; font-size: 16px; line-height: 28px; margin: 0 0 48px; }
+
+  a { color: #990000; text-decoration: none; }
+
+  a:hover { text-decoration: underline }
+
+  .date { color: #111; display: block; font-family: 'Open Sans', sans-serif; font-size: 16px; position: relative; text-align: center; z-index: 1; }
+
+  .date:before { border-top: 1px solid #111; content: ""; position: absolute; top: 12px; left: 0; width: 100%; z-index: -1; }
+
+  .author { color: #111; display: block; font-family: 'Open Sans', sans-serif; font-size: 16px; padding-bottom: 38px; position: relative; text-align: center; z-index: 1; }
+
+  .author:before { border-top: 1px solid #111; content: ""; position: absolute; top: 12px; left: 0; width: 100%; z-index: -1; }
+
+  .date span,
+
+  .author span { background: #fdfdfd; padding: 0 10px; text-transform: uppercase; }
+
+  .line { border-top: 1px solid #111; display: block; margin-top: 60px; padding-top: 50px; position: relative; }
+
+  .read-more1 { -moz-border-radius: 50%; -moz-transition: all 0.2s ease-in-out; -webkit-border-radius: 50%; -webkit-transition: all 0.2s ease-in-out; background: #111; border-radius: 50%; border: 10px solid #fdfdfd; color: #fff; display: block; font-family: 'Open Sans', sans-serif; font-size: 14px; height: 80px; line-height: 80px; margin: -40px 0 0 -40px; position: absolute; top: 40%; left: 10.5%; text-align: center; text-transform: uppercase; width: 80px;  }
+  .read-more2 { -moz-border-radius: 50%; -moz-transition: all 0.2s ease-in-out; -webkit-border-radius: 50%; -webkit-transition: all 0.2s ease-in-out; background: #111; border-radius: 50%; border: 10px solid #fdfdfd; color: #fff; display: block; font-family: 'Open Sans', sans-serif; font-size: 14px; height: 80px; line-height: 80px; margin: -40px 0 0 -40px; position: absolute; top: 60%; left: 10.5%; text-align: center; text-transform: uppercase; width: 80px; color: #ffff80; }
+  .read-more3 { -moz-border-radius: 50%; -moz-transition: all 0.2s ease-in-out; -webkit-border-radius: 50%; -webkit-transition: all 0.2s ease-in-out; background: #111; border-radius: 50%; border: 10px solid #fdfdfd; color: #fff; display: block; font-family: 'Open Sans', sans-serif; font-size: 14px; height: 80px; line-height: 80px; margin: -40px 0 0 -40px; position: absolute; top: 80%; left: 10.5%; text-align: center; text-transform: uppercase; width: 80px; color: #80ff80; }
+
+  .read-more1:hover { background: #ff4d4d; text-decoration: none; color: #111; }
+  .read-more2:hover { background: #ffff80; text-decoration: none; color: #111; }
+  .read-more3:hover { background: #80ff80; text-decoration: none; color: #111; }
+
+
+</style>
+</head>
+<body>
+  <table style="width:100%">
+   <tr>
+     <th><h2>State</h2></th>
+     <th><h2>Current Covid-19 Severity Prediction</h2></th>
+     <th><h2>Yesterday's Prediction</h2></th>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Alabama</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Alaska</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Arizona</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Arkansas</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>California</h3></td>
+     <td style="text-align:center"><h4>50</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Colorado</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Connecticut</h3></td>
+     <td style="text-align:center"><h4>50</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Deleware</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Florida</h3></td>
+     <td style="text-align:center"><h4>5</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Georgia</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Hawaii</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Idaho</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Illinois</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Indiana</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Iowa</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Kansas</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Kentucky</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Lousiana</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Maine</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Maryland</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Massachusetts</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Michigan</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Minnesota</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Mississippi</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Missouri</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Montana</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Nebraska</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Nevada</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>New Hampshire</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>New Jersey</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>New Mexico</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>New York</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>North Carolina</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>North Dakota</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Ohio</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Oklahoma</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Pennsylvania</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Rhode Island</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr><tr>
+     <td style="text-align:center"><h3>South Carolina</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>South Dakota</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Alabama</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Tennessee</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Texas</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Utah</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Vermont</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Virginia</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Washington</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>West Virginia</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Wisconsin</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+   <tr>
+     <td style="text-align:center"><h3>Wyoming</h3></td>
+     <td style="text-align:center"><h4>55</h4></td>
+     <td style="text-align:center"><h4>50</h4></td>
+   </tr>
+
+
+
+  </table>
+</body>
