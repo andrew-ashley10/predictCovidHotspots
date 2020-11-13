@@ -7,10 +7,10 @@ import argparse
 
 
 #get input csv file
-parser = argparse.ArgumentParser()
+#parser = argparse.ArgumentParser()
 
-parser.add_argument("--file", "-f", type=str, required=True)
-args = parser.parse_args()
+#parser.add_argument("--file", "-f", type=str, required=True)
+#args = parser.parse_args()
 
 
 
